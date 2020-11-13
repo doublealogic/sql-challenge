@@ -12,12 +12,13 @@ I placed the CSV files.
 
 ### Data Modeling
 First, I inspected the CSVs and sketched out an ERD of the tables. That ERD was then exported 
-as a PNG file and is located in the `EmployeeSQL` folder as "Data Modeling - ERD".png
+as a PNG file and is located in the `EmployeeSQL` folder as `Data Modeling - ERD.png`
 
 ### Data Engineering
 Using the information I had, I created a table scheme for each of the six CSV files I was provided 
 using a series of primary keys, foreign keys and composite keys depending on what each table needed. 
-Once that was complete, I imported the CSV files into their corresponding SQL tables. 
+Once that was complete, I imported the CSV files into their corresponding SQL tables.
+The SQL file in which I created the tables is included in this repository in the `EmployeeSQL` folder as `Data_Engineering.sql`
 
 ### Data Analysis
 Now that I had a completed database, I then did the following analysis:
@@ -38,5 +39,10 @@ Now that I had a completed database, I then did the following analysis:
 8. In descending order, listed the frequency count of employee last names, i.e., how many employees share each last name.
 
 ### Bonus Work
+Upon examining the data, I came upon the suspicion that the data was fake. That this
+was actually a test of my data engineering skills at this fictional company. To test
+this theory, I then did the following visualization work to see if I was right:
 
-### What's Included in the Repository
+1. Imported the SQL database into Pandas.
+2. Create a histogram to visualize the most common salary ranges for employees.
+3. Create a bar chart of average salary by title.
