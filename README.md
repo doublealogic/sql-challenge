@@ -5,9 +5,14 @@ Jupyter Notebook applications. Under the fictional scenario of me being hired as
 data engineer at a company, I would be using Data Engineering and Data Analysis to help design 
 the tables to hold data in the CSVs, import the CSVs into a SQL database, and answer questions 
 about the data.
-### Setup
+
 ### Data Modeling
+First, I inspected the CSVs and sketched out an ERD of the tables. That ERD was then exported as a PNG file and is located in the `EmployeeSQL` folder as "Data Modeling - ERD".png
+
 ### Data Engineering
+
 ### Data Analysis
+
 ### Bonus Work
+
 ### What's Included in the Repository
