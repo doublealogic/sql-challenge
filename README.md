@@ -37,6 +37,7 @@ Now that I had a completed database, I then did the following analysis:
 7. Listed all employees in the Sales and Development departments, including their employee number, last name, first name, and department name.
 
 8. In descending order, listed the frequency count of employee last names, i.e., how many employees share each last name.
+All of the above analysis is located in the `Data_Analysis.sql` file in the `EmployeeSQL` folder.
 
 ### Bonus Work
 Upon examining the data, I came upon the suspicion that the data was fake. That this
@@ -46,3 +47,5 @@ this theory, I then did the following visualization work to see if I was right:
 1. Imported the SQL database into Pandas.
 2. Create a histogram to visualize the most common salary ranges for employees.
 3. Create a bar chart of average salary by title.
+
+This is all contained in the `Bonus_Analysis.ipynb` file in the `EmployeeSQL` folder.
