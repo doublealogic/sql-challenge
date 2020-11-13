@@ -43,23 +43,28 @@ ALTER TABLE "Dept_Emp" ADD CONSTRAINT "fk_Dept_Emp_emp_no" FOREIGN KEY("emp_no")
 ALTER TABLE "Dept_Emp" ADD CONSTRAINT "fk_Dept_Emp_dept_no" FOREIGN KEY("dept_no")
 	REFERENCES "Departments" ("dept_no");
 	
+-- Creates Dept_Manager Table
 CREATE TABLE "Dept_Manager" (
     "dept_no" VARCHAR(10) NOT NULL,
     "emp_no" INTEGER NOT NULL,
     CONSTRAINT "pk_Dept_Manager" PRIMARY KEY ("dept_no","emp_no")
 );
 
+-- Connects Dept_Manager and Departments Tables via the Departments' Department number
 ALTER TABLE "Dept_Manager" ADD CONSTRAINT "fk_Dept_Manager_dept_no" FOREIGN KEY("dept_no")
 	REFERENCES "Departments" ("dept_no");
 
+-- Connects Dept_Manager and Employees Tables via the Employees' Employee number
 ALTER TABLE "Dept_Manager" ADD CONSTRAINT "fk_Dept_Manager_emp_no" FOREIGN KEY("emp_no")
 	REFERENCES "Employees" ("emp_no");
 	
+-- Creates Salaries Table
 CREATE TABLE "Salaries" (
     "emp_no" INTEGER NOT NULL,
     "salary" INTEGER NOT NULL,
     CONSTRAINT "pk_Salaries" PRIMARY KEY ("emp_no","salary")
 );
 
+-- Connects Salaries and Employees Tables via the Employees' Employee number
 ALTER TABLE "Salaries" ADD CONSTRAINT "fk_Salaries_emp_no" FOREIGN KEY("emp_no")
 	REFERENCES "Employees" ("emp_no");
