@@ -45,7 +45,7 @@ was actually a test of my data engineering skills at this fictional company. To 
 this theory, I then did the following visualization work to see if I was right:
 
 1. Imported the SQL database into Pandas.
-2. Create a histogram to visualize the most common salary ranges for employees.
-3. Create a bar chart of average salary by title.
+2. Created a histogram to visualize the most common salary ranges for employees.
+3. Created a bar chart of average salary by title.
 
 This is all contained in the `Bonus_Analysis.ipynb` file in the `EmployeeSQL` folder.
