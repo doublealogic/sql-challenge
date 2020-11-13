@@ -78,3 +78,9 @@ public."Dept_Emp".dept_no = public."Departments".dept_no
 INNER JOIN public."Employees" ON
 public."Dept_Emp".emp_no = public."Employees".emp_no
 WHERE public."Dept_Emp".dept_no = 'd005'
+
+-- In descending order, lists the frequency count of employee last names, i.e., how many employees share each last name
+SELECT last_name, COUNT(public."Employees".last_name) AS "Last_Name Frequency"
+FROM public."Employees"
+GROUP BY last_name
+ORDER BY "Last_Name Frequency" DESC;
